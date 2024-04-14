@@ -3,6 +3,7 @@ import mongoose from "mongoose";
 import dotenv from "dotenv";
 import userRouter from './routes/user.route.js'
 import authRouter from './routes/auth.route.js'
+import listingRouter from './routes/listing.route.js'
 import cookieParser from 'cookie-parser'
 
 dotenv.config();
@@ -24,6 +25,9 @@ app.use('/api/user', userRouter);
 
 //signup route
 app.use('/api/auth', authRouter);
+
+//route for listing
+app.use('/api/listing', listingRouter);
 
 //middleware for auth
 app.use((err, req, res, next) => {
