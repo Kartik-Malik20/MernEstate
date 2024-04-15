@@ -17,7 +17,7 @@ const userSchema = new mongoose.Schema({
     },
     avatar:{
         type:String,
-        default:"https://icons8.com/icon/14736/customer",
+        default:"https://firebasestorage.googleapis.com/v0/b/mern-estate-a97d9.appspot.com/o/1713161335850user.png?alt=media&token=67c944d8-599e-46cf-a376-0957ad65fa9f",
     }
 }, {timestamps: true});
 
