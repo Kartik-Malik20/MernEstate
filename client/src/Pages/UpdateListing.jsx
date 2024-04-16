@@ -162,7 +162,7 @@ export default function UpdateListing() {
         setError(data.message);
       }
 
-      navigate('/profile');
+      navigate('/data._id');
     } catch (error) {
       setError(error.message);
       setLoading(false);
